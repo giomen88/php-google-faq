@@ -114,6 +114,7 @@ $faqs = [
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+<!-- header -->
         <header>
             <div class="header-top">
                 <div class="left">
@@ -138,6 +139,7 @@ $faqs = [
                 </nav>
             </div>
         </header>
+<!-- main -->
         <main class="container">
             <section id="faq">
             <?php foreach($faqs as $faq) : ?>
@@ -148,7 +150,7 @@ $faqs = [
             <?php endforeach; ?>
             </section>
         </main>
-
+<!-- footer -->
         <footer>
             <div class="left">
                 <ul>
@@ -168,7 +170,6 @@ $faqs = [
                     <option value="">Tedesco</option>
                 </select>
             </div>
-
         </footer>
     </body>
 </html>
