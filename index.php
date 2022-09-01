@@ -1,8 +1,8 @@
 <?php
 $faqs = [
     [
-        "Come state implementando la recente decisione della Corte di giustizia dell'Unione europea (CGUE) relativa al diritto all'oblio?",
-        [
+        'question' => "Come state implementando la recente decisione della Corte di giustizia dell'Unione europea (CGUE) relativa al diritto all'oblio?",
+        'answer' => [
          "La recente <a href=''>decisione della Corte di giustizia dell'Unione europea</a> ha profonde conseguenze per i motori di ricerca in Europa. 
          La Corte ha stabilito che alcuni utenti hanno il diritto di chiedere ai motori di ricerca come Google di rimuovere risultati relativi 
          a chiavi di ricerca che includono il proprio nome. Per poter essere rimossi, i risultati visualizzati devono essere inadeguati, 
@@ -32,8 +32,8 @@ $faqs = [
         ], 
     ],
     [
-        "Come fa Google a proteggere la mia privacy e a tenere le mie informazioni al sicuro?",
-        [
+        'question' => "Come fa Google a proteggere la mia privacy e a tenere le mie informazioni al sicuro?",
+        'answer' => [
          "Sappiamo che la sicurezza e la privacy sono importanti per te e lo sono anche per noi. Per noi è imperativo offrire un'elevata sicurezza e 
          assicurarti che le tue informazioni sono al sicuro e accessibili quando ne hai bisogno.",
          "Siamo costantemente al lavoro per garantire un'elevata sicurezza, proteggere la tua privacy e rendere Google ancora più efficace ed 
@@ -47,8 +47,8 @@ $faqs = [
         ], 
     ],
     [
-        "Perché il mio account è associato a un paese?",
-        [
+        'question' => "Perché il mio account è associato a un paese?",
+        'answer' => [
         "Il tuo account è associato a un paese (o territorio) nei Termini di servizio per poter stabilire due cose:
         <ol>
             <li>La società consociata Google che offre i servizi, tratta le tue informazioni ed è responsabile del rispetto delle leggi sulla privacy
@@ -75,8 +75,8 @@ $faqs = [
         ], 
     ],
     [
-        "Come faccio a rimuovere informazioni su di me dai risultati di ricerca di Google?",
-        [
+        'question' => "Come faccio a rimuovere informazioni su di me dai risultati di ricerca di Google?",
+        'answer' => [
         "I risultati di ricerca di Google rispecchiano i contenuti pubblicamente disponibili sul Web. I motori di ricerca non possono rimuovere i 
          contenuti direttamente dai siti web, quindi rimuovere risultati di ricerca da Google non consente di rimuovere i contenuti dal Web. 
         Se desideri rimuovere qualcosa dal Web, devi <a href=''>contattare il webmaster</a> del sito su cui sono pubblicati i contenuti e chiedergli di apportare 
@@ -86,8 +86,8 @@ $faqs = [
         richiesta di rimozione urgente, è inoltre possibile <a href=''>visitare la nostra pagina di assistenza per avere ulteriori informazioni</a>.",
         ], 
     ],[
-        "Quando faccio clic sui risultati della Ricerca Google, le mie chiavi di ricerca vengono inviate ai siti web?",
-        [
+        'question' => "Quando faccio clic sui risultati della Ricerca Google, le mie chiavi di ricerca vengono inviate ai siti web?",
+        'answer' => [
         "In alcuni casi sì. Quando fai clic su un risultato della Ricerca Google, il tuo browser web potrebbe reindirizzare alla pagina web di 
         destinazione anche l'indirizzo Internet, o URL, della pagina dei risultati di ricerca sotto forma di URL referrer. Talvolta, l'URL della 
         pagina dei risultati di ricerca potrebbe contenere la query di ricerca che hai inserito. Se utilizzi la ricerca SSL (la funzione di ricerca 
@@ -103,170 +103,72 @@ $faqs = [
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- fontawesome -->
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css' integrity='sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==' crossorigin='anonymous'/>
-</head>
-<style>
-    body {
-        margin: 0 auto;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: sans-serif;
-    }
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- fontawesome -->
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css' integrity='sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==' crossorigin='anonymous'/>
+        <!-- css -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-top">
+                <div class="left">
+                    <a href=""><img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c51f.png" alt="" class="logo"></a>
+                    <a href="">Privacy e Termini</a>
+                </div>
+                <div class="right">
+                    <a href=""><img src="https://cdn-icons-png.flaticon.com/512/1237/1237932.png" alt="" class="menu"></a>
+                    <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv43UHnNIPvNj-Wlz7ZrhHwIjbCeTClGuvBw&usqp=CAU" alt="" class="google-icon"></a>
+                </div>
+        </div>
 
-    header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        box-shadow: 0px 5px 5px lightgray;
-        background-color: white;
-        padding: 10px 20px;
-    }
-    
-    main {
-        padding-top: 140px
-    }
+            <div class="header-bottom">
+                <nav>
+                    <ul>
+                    <li><a href="">Introduzione</a></li>
+                    <li><a href="">Norme sulla privacy</a></li>
+                    <li><a href="">Termini di servizio</a></li>
+                    <li><a href="">Tecnologie</a></li>
+                    <li><a href="">Domande frequenti</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="container">
+            <section id="faq">
+            <?php foreach($faqs as $faq) : ?>
+                <h2><?= $faq['question'] ?></h2>
+                <?php foreach($faq['answer'] as $paragraph) : ?>
+                    <p> <?= $paragraph ?> </p>
+                <?php endforeach; ?>
+            <?php endforeach; ?>
+            </section>
+        </main>
 
-    footer {
-        padding: 5px 20px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: lightgray;
-    }
-
-    a {
-        text-decoration: none;
-        color: blue;
-    }
-    
-    ul {
-        list-style-type: none;
-    }
-    
-    header ul, footer ul {
-        display: flex;
-        padding-left: 0;
-    }
-
-    header li, footer li {
-        margin-right: 20px;
-    }
-    
-    header a, footer a {
-        color: gray;
-    }
-
-    .container {
-        max-width: 800px;
-        margin: 0 auto;
-    }
-
-    .header-top {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .header-top a {
-        font-size: 1.5rem;
-    }
-
-    .header-top .left, .header-top .right {
-        display: flex;
-        align-items: center;
-    }
-
-    .header-top .logo {
-        max-width: 100%;
-        height: auto;
-        width: 100px;
-        margin-right: 15px;
-    }
-
-    .header-top .menu {
-        width: 20px;
-        margin-right: 15px;
-    }
-
-    .header-top .google-icon {
-        width: 30px;
-    }
-
-    .header-bottom a:hover {
-        color: blue;
-        border-bottom: 2px solid blue;
-    }
-
-    footer a {
-        font-size: 0.8rem;
-    }
-
-
-</style>
-<body>
-    <header>
-        <div class="header-top">
+        <footer>
             <div class="left">
-                <a href=""><img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c51f.png" alt="" class="logo"></a>
-                <a href="">Privacy e Termini</a>
+                <ul>
+                    <li><a href="">Google</a></li>
+                    <li> · <a href="">Tutto su Google</a></li>
+                    <li> · <a href="">Privacy</a></li>
+                    <li> · <a href="">Termini</a></li>
+                </ul>
             </div>
             <div class="right">
-                <a href=""><img src="https://cdn-icons-png.flaticon.com/512/1237/1237932.png" alt="" class="menu"></a>
-                <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv43UHnNIPvNj-Wlz7ZrhHwIjbCeTClGuvBw&usqp=CAU" alt="" class="google-icon"></a>
+                <span><i class="fa-solid fa-globe"></i></span>
+                <select name="" id="">
+                    <option value="">Italiano</option>
+                    <option value="">Inglese</option>
+                    <option value="">Spagnolo</option>
+                    <option value="">Francese</option>
+                    <option value="">Tedesco</option>
+                </select>
             </div>
-    </div>
 
-        <div class="header-bottom">
-            <nav>
-                <ul>
-                <li><a href="">Introduzione</a></li>
-                <li><a href="">Norme sulla privacy</a></li>
-                <li><a href="">Termini di servizio</a></li>
-                <li><a href="">Tecnologie</a></li>
-                <li><a href="">Domande frequenti</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main class="container">
-        <section id="faq">
-        <?php foreach($faqs as $faq) : ?>
-            <?php $question = $faq[0] ?>
-            <?php $answer = $faq[1]?>
-            <h2><?= $question ?></h2>
-            <?php foreach($answer as $paragraph) : ?>
-                <p> <?= $paragraph ?> </p>
-            <?php endforeach; ?>
-        <?php endforeach; ?>
-        </section>
-    </main>
-
-    <footer>
-        <div class="left">
-            <ul>
-                <li><a href="">Google</a></li>
-                <li> · <a href="">Tutto su Google</a></li>
-                <li> · <a href="">Privacy</a></li>
-                <li> · <a href="">Termini</a></li>
-            </ul>
-        </div>
-        <div class="right">
-            <span><i class="fa-solid fa-globe"></i></span>
-            <select name="" id="">
-                <option value="">Italiano</option>
-                <option value="">Inglese</option>
-                <option value="">Spagnolo</option>
-                <option value="">Francese</option>
-                <option value="">Tedesco</option>
-            </select>
-        </div>
-
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>
